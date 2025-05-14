@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>anonfile</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>anonfile</h1>
+    <form id="uploadForm">
+      <label class="file-label">
+        <input type="file" id="fileInput" required>
+        <span>Выберите файл</span>
+      </label>
+      <button type="submit">Загрузить</button>
+    </form>
+    <div id="linkBox" class="hidden">
+      <p>Ваша ссылка для скачивания:</p>
+      <input type="text" id="downloadLink" readonly>
+      <button id="copyBtn">Скопировать</button>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html> 
